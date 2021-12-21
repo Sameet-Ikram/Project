@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIcode.AdminGUI.SeatsList">
+   <ImageView fitHeight="421.0" fitWidth="414.0" opacity="0.32" pickOnBounds="true">
+      <image>
+         <Image url="@../CustomerResources/luke-chesser-IGtutkXikuc-unsplash.jpg" />
+      </image>
+   </ImageView>
+    <TableView fx:id="seatstable" layoutY="88.0" prefHeight="333.0" prefWidth="414.0" stylesheets="@table.css">
+      <columns>
+          <TableColumn fx:id="flightid" prefWidth="59.0" text="Flightid" />
+          <TableColumn fx:id="seatnumber" prefWidth="98.0" text="Seat Number" />
+          <TableColumn fx:id="customerpassport" prefWidth="127.0" text="Customer Passport" />
+          <TableColumn fx:id="bookingstatus" prefWidth="105.0" text="Booking Status" />
+      </columns>
+    </TableView>
+   <Button mnemonicParsing="false" onAction="#Exit" prefHeight="17.0" prefWidth="37.0" style="-fx-background-color: #f44366;" text="&lt;" textFill="#ffecec">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Button>
+   <Text fill="#0b5586" layoutX="149.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seats List">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Text>
+</AnchorPane>
